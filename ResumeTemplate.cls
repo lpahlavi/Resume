@@ -78,9 +78,11 @@
 }
 
 % My contact info
-\newcommand{\contact}[5]{
-	\center{\large #1 {\large\textperiodcentered} #2 {\large} #3
-	{\large\textperiodcentered} #4 {\large\textperiodcentered} #5}
+\newcommand{\contact}[6]{
+	\center{\large #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
+	{\large\textperiodcentered} #4 
+	\newline
+	#5 {\large\textperiodcentered} #6}
 \vspace*{-\baselineskip}
 }
 
