@@ -35,10 +35,10 @@
 % Setup document margins
 \geometry{letterpaper,
 	total={210mm,297mm},
-	left=0.75in,
-	right=0.75in,
-	top=0.75in,
-	bottom=0.75in}
+	left=0.5in,
+	right=0.5in,
+	top=0.5in,
+	bottom=0.5in}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom commands
@@ -74,16 +74,25 @@
 
 % My name at the top of the document
 \newcommand{\name}[1]{
-	\centerline{\bf\huge{#1}}
+	\centerline{\bf\Huge{#1}}
 }
 
 % My contact info
-\newcommand{\contact}[6]{
+\newcommand{\contact}[5]{
 	\center{\large #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-	{\large\textperiodcentered} #4 
-	\newline
-	#5 {\large\textperiodcentered} #6}
+	{\large\textperiodcentered} #4 {\large\textperiodcentered} #5}
 \vspace*{-\baselineskip}
+}
+
+% 5-item description
+\newcommand{\workitemsfive}[5]{
+	\begin{itemize}[noitemsep,nosep]
+		\item #1
+		\item #2
+		\item #3
+		\item #4
+		\item #5 \vspace*{-\baselineskip}
+	\end{itemize}
 }
 
 % 4-item description
