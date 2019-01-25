@@ -37,8 +37,8 @@
 	total={210mm,297mm},
 	left=0.75in,
 	right=0.75in,
-	top=0.75in,
-	bottom=0.75in}
+	top=0.55in,
+	bottom=0.65in}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom commands
