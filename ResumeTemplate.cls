@@ -35,10 +35,10 @@
 % Setup document margins
 \geometry{letterpaper,
 	total={210mm,297mm},
-	left=0.75in,
-	right=0.75in,
-	top=0.75in,
-	bottom=0.75in}
+	left=0.55in,
+	right=0.55in,
+	top=0.55in,
+	bottom=0.65in}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom commands
@@ -88,7 +88,7 @@
 
 % 4-item description
 \newcommand{\workitemsfour}[4]{
-	\begin{itemize}[noitemsep,nosep]
+	\raggedright\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2
 		\item #3
@@ -98,7 +98,7 @@
 
 % 3-item description
 \newcommand{\workitemsthree}[3]{
-	\begin{itemize}[noitemsep,nosep]
+	\raggedright\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2
 		\item #3 \vspace*{-\baselineskip}
@@ -107,7 +107,7 @@
 
 % 2-item description
 \newcommand{\workitemstwo}[2]{
-	\begin{itemize}[noitemsep,nosep]
+	\raggedright\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2 \vspace*{-\baselineskip}
 	\end{itemize}
@@ -115,7 +115,7 @@
 
 % 1-item description
 \newcommand{\workitemsone}[1]{
-	\begin{itemize}[noitemsep,nosep]
+	\raggedright\begin{itemize}[noitemsep,nosep]
 		\item #1 \vspace*{-\baselineskip}
 	\end{itemize}
 }
