@@ -11,6 +11,7 @@
 % General setup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{ResumeTemplate}
+\usepackage{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document
@@ -20,11 +21,32 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Title and headers
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\name{Louis L. W. D. Pahlavi}
+	\name{Louis L. W. D. Pahlavi}	
 	
-	\contact{106 Wineva Ave}{Toronto, ON, Canada}{M4E 2T2}{+1-(647)-909-5487}{louis.pahlavi@mail.utoronto.ca}
-	{\href{https://lpahlavi.github.io}{lpahlavi.github.io}}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Personal details
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{PERSONAL DETAILS}
+
+	\noindent\begin{minipage}[c]{0.40\linewidth} 
+
+	\noindent\begin{tabularx}{\linewidth}{>{\bfseries}l X}
+	    Email &  louis.pahlavi@mail.utoronto.ca\\
+	    Phone & +1 (647) 909-5487 \\
+	    Address & 106 Wineva Ave, Toronto, ON, M4E 2T2, Canada \\
+	\end{tabularx}
+
+	\end{minipage}
+	\noindent\begin{minipage}[c]{0.60\linewidth} 
+
+	\noindent\begin{tabularx}{\linewidth}{>{\bfseries}l X}
+	    Website & \href{https:\\lpahlavi.github.io}{lpahlavi.github.io} \\
+	    Nationality & French, Canadian \\
+	    Languages & French (native), English (native), Italian (fluent), German (intermediate), Czech (basic) \\
+	\end{tabularx}
 	
+	\end{minipage}
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Education
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,11 +56,10 @@
 	\workitemsfour
 	{Minor in Robotics and Mechatronics}
 	{Final Project: \textit{Distributed Formation Control of a Swarm of Unicycles}}
-	{16 month professional internship between third and fourth years of studies}
 	{Latest term 92.1\% average (ranked 4 out of 173), 3.86/4.00 cumulative GPA}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Education
+	% Research and industry experience
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{RESEARCH AND INDUSTRY EXPERIENCE}
 	
@@ -64,7 +85,7 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Projects and Teaching
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{PROJECTS AND TEACHING}
+	\section{PROJECTS}
 	
 	\position{Capstone Team Lead}{September 2018--April 2019}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}
 
@@ -73,21 +94,21 @@
 	{Responsible for the design of the communication interfaces between onboard modules in C++ and Python.}
 	{Developed a Python simulation framework to test and tune the control algorithms. }
 	
-	\position{Teaching Assistant}{September 2016--December 2016}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}
-
-	\workitemsone
-	{Taught APS100 -- 'Orientation to Engineering' to first year Electrical and Computer Engineering students.}
-	
 	\position{Wireless Communications Lead}{September 2014--June 2016}{\href{https://www.utat.ca/space-systems/}{University of Toronto Aerospace Team}}
 
 	\workitemstwo
 	{Designed, built and tested the antenna and communication module PCB, on a student-built nano-satellite.}
 	{Presented our design at several Product Design Reviews and the Critical Design Review in Vancouver.}
-
-	% \position{Ground School Instructor}{September 2014--January 2015}{330 Danforth Tech RCACS}
-	%
-	% \workitemsone
-	% {Coordinated and taught the pilot ground school course at 330 Danforth Tech Royal Canadian Air Cadet Squadron.}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Technical Skills
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{TECHNICAL SKILLS}
+	\raggedright
+	\begin{itemize}[noitemsep, leftmargin=*]
+		\item \textbf{Programming Languages:} Python, C/C++,  MATLAB, Java \\
+		\item \textbf{Software and CAD:} Unix, Git, Simulink, Tensorflow, Qt, LaTeX\\\vspace*{-\baselineskip}
+	\end{itemize}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Awards and Scholarships
@@ -99,17 +120,6 @@
 		\item \textbf{University of Toronto International Exchange Bursary} \hfill 2016
 		\item \textbf{University of Toronto Centre for International Exchange Award} \hfill 2016
 		\item \textbf{Royal Canadian Air Cadet Glider and Power Pilot Scholarships} \hfill 2013, 2014\vspace*{-\baselineskip}
-	\end{itemize}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Technical Skills
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{TECHNICAL SKILLS}
-	\raggedright
-	\begin{itemize}[noitemsep, leftmargin=*]
-		\item \textbf{Programming Languages:} Python, C/C++,  MATLAB \\
-		\item \textbf{Software and CAD:} Unix, Git, Simulink, Tensorflow, Qt, LaTeX\\
-		\item \textbf{Languages:} French (native),  English (native),  Italian (fluent),  German (intermediate), Czech (basic)\vspace*{-\baselineskip}
 	\end{itemize}
 
 \end{document}
