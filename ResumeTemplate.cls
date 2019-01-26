@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ResumeTemplate}[2015/08/05 Louis Resume Class]
-\LoadClass[11pt]{article}
+\LoadClass[a4paper,academicons]{altacv}
 \RequirePackage{titlesec}
 \pagenumbering{gobble}
 
@@ -21,7 +21,6 @@
 \titlespacing\subsection{0pt}{20pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
 
 % Required packages
-\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{enumitem}
 \usepackage{geometry}
@@ -29,16 +28,11 @@
 % Useful packages
 \usepackage{hyperref}
 
-% Font
-\usepackage{tgtermes}
-
 % Setup document margins
-\geometry{letterpaper,
-	total={210mm,297mm},
-	left=0.5in,
-	right=0.5in,
-	top=0.5in,
-	bottom=0.5in}
+\geometry{left=2.25cm,right=2.25cm,top=2.25cm,bottom=2.25cm}
+
+
+\setmainfont{Carlito}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom commands
@@ -64,16 +58,17 @@
 
 % Dated subsection
 \newcommand{\datedsubsection}[2]{%
-	\subsection[#1]{#1 \hfill \textnormal{\normalsize{#2}}}%
+	\subsection[#1]{#1 \newline \textnormal{\normalsize{#2}}}%
 }
 
 % Position (i.e. job or other position)
-\newcommand{\position}[3]{%
-	\subsection[#1]{#1, \textnormal{#3}\hfill \textnormal{\normalsize{#2}}}%
+\newcommand{\position}[4]{%
+	\subsection[#1]{#1 \hfill \textnormal{\normalsize{#2}} \newline
+	\textnormal{\normalsize{#3}} \hfill \textnormal{\normalsize{#4}}}
 }
 
 % My name at the top of the document
-\newcommand{\name}[1]{
+\newcommand{\myname}[1]{
 	\centerline{\bf\Huge{#1}}
 }
 
