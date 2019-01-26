@@ -29,7 +29,7 @@
 \usepackage{hyperref}
 
 % Setup document margins
-\geometry{left=2.25cm,right=2.25cm,top=2.25cm,bottom=2.25cm}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
 
 
 \setmainfont{Carlito}
