@@ -20,7 +20,7 @@ rm        = rm -f
 # Compiler
 LATEX     = latexmk
 # Compiling flags
-LFLAGS    = -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make
+LFLAGS    = -pdf -xelatex -use-make
 
 # Build all the executables
 all: $(MAIN)

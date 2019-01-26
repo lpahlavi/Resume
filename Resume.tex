@@ -11,121 +11,153 @@
 % General setup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{ResumeTemplate}
-\usepackage{tcolorbox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Title and headers
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\name{Louis L. W. D. Pahlavi}
-	
-	\contact{106 Wineva Ave}{Toronto, ON, Canada}{M4E 2T2}{+1-(647)-909-5487}{louis.pahlavi@mail.utoronto.ca}
-	{\href{https://lpahlavi.github.io}{lpahlavi.github.io}}
-	~\newline\newline
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Education
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=EDUCATION]
-	
-	\datedsubsection{University of Toronto, BASc in Computer Engineering}{September 2014--April 2019}
-	\workitemsfour
-	{Minor in Robotics and Mechatronics}
-	{Final Project: \textit{Distributed Formation Control of a Swarm of Unicycles}}
-	{16 month professional internship between third and fourth years of studies}
-	{Latest term 92.1\% average (ranked 4 out of 173), 3.86/4.00 cumulative GPA}
-	~
-	\end{tcolorbox}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Education
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=RESEARCH AND INDUSTRY EXPERIENCE]
-	
-	\position{Systems and Control Engineering Intern}{May 2017--August 2018}{\href{https://veritystudios.com/}{Verity Studios AG}}
+    \fontsize{10}{12}\selectfont
 
-	\workitemsthree
-	{Serviced entertainment drone show systems overseas and oversaw flight operations for several weeks.}
-	{Worked on improving the onboard control algorithms of swarms of quadcopters implemented in C++.}
-	{Evaluated and characterized flight performance and effectiveness of calibration routines using Python.}
-	
-	\position{Researcher}{May 2016--August 2016}{\href{http://www.lbb.ethz.ch/}{ETH Z{\"u}rich Laboratory for Biosensors and Bioelectronics (LBB)}}
-	
-	\workitemstwo
-	{Developed the control and image processing software for a biosensor measuring protein interactions.}
-	{Created a Graphical User Interface using Qt to control the actuators and interface them with various sensors.}
-	
-	\position{Researcher}{May 2015--September 2015}{\href{http://www.waves.utoronto.ca/prof/svhum/}{University of Toronto Reconfigurable Antenna Laboratory}}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Name
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \centering\myname{Louis L. W. D. Pahlavi}
+    ~
 
-	\workitemstwo
-	{Designed and simulated the early prototypes of a deployable antenna mounted on the NORSAT-2 maritime communications satellite (launched in 2017) in collaboration with the European Space Agency.}
-	{Created a MATLAB simulation to model a satellite's orbit and predict antenna radiation intensity on the surface of the Earth. Worked on antenna synthesis to find an antenna array for a given desired coverage area.}
-	~
-	\end{tcolorbox}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Projects and Teaching
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Left column
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \raggedright\begin{minipage}[c]{0.65\linewidth} 
 
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=PROJECTS AND TEACHING]
-	
-	\position{Capstone Team Lead}{September 2018--April 2019}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Technical Skills
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{TECHNICAL SKILLS}
 
-	\workitemsthree
-	{Implementing a fully distributed algorithm for the formation control of a swarm of wheeled robots in C++.}
-	{Responsible for the design of the communication interfaces between onboard modules in C++ and Python.}
-	{Developed a Python simulation framework to test and tune the control algorithms. }
-	
-	\position{Teaching Assistant}{September 2016--December 2016}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}
+        \noindent\begin{tabularx}{\linewidth}{>{\bfseries}lX}
+           Build tools     & Makefile, CMake \\
+           Version control & Git \\
+           Platforms       & Linux, Raspberry Pi, Arduino \\
+           Libraries       & Boost, QT, CVX, Tensorflow \\
+           Theory          & Control theory and robotics, Networking, Optimization, Algorithms and data structures, Machine learning
+        \end{tabularx}
 
-	\workitemsone
-	{Taught APS100 -- 'Orientation to Engineering' to first year Electrical and Computer Engineering students.}
-	
-	\position{Wireless Communications Lead}{September 2014--June 2016}{\href{https://www.utat.ca/space-systems/}{University of Toronto Aerospace Team}}
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Education
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{EDUCATION}
 
-	\workitemstwo
-	{Designed, built and tested the antenna and communication module PCB, on a student-built nano-satellite.}
-	{Presented our design at several Product Design Reviews and the Critical Design Review in Vancouver.}
-	~
-	\end{tcolorbox}
+        % \datedsubsection{ETH Z{\"u}rich, MSc in Computational Science}{September 2019--February 2021}
 
-	% \position{Ground School Instructor}{September 2014--January 2015}{330 Danforth Tech RCACS}
-	%
-	% \workitemsone
-	% {Coordinated and taught the pilot ground school course at 330 Danforth Tech Royal Canadian Air Cadet Squadron.}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Awards and Scholarships
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % \workitemsone
+        % {Specialization in Financial Engineering}
 
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=SCHOLARSHIPS AND AWARDS]
-	\begin{itemize}[noitemsep, leftmargin=*]
-		\item \textbf{Faculty of Applied Science and Engineering Dean's Honours List} \hfill 2014--Present
-		\item \textbf{Gordon R. Slemon Scholarship} -- Awarded for engineering design and academic excellence \hfill 2016
-		\item \textbf{University of Toronto International Exchange Bursary} \hfill 2016
-		\item \textbf{University of Toronto Centre for International Exchange Award} \hfill 2016
-		\item \textbf{Royal Canadian Air Cadet Glider and Power Pilot Scholarships} \hfill 2013, 2014\vspace*{-\baselineskip}
-	\end{itemize}
-	~
-	\end{tcolorbox}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Technical Skills
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \datedsubsection{University of Toronto, BASc in Computer Engineering}{September 2014--April 2019}
 
-	\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=TECHNICAL SKILLS]
-	\raggedright
-	\begin{itemize}[noitemsep, leftmargin=*]
-		\item \textbf{Programming Languages:} Python, C/C++,  MATLAB \\
-		\item \textbf{Software and CAD:} Unix, Git, Simulink, Tensorflow, Qt, LaTeX\\
-		\item \textbf{Languages:} French (native),  English (native),  Italian (fluent),  German (intermediate), Czech (basic)\vspace*{-\baselineskip}
-	\end{itemize}
-	~
-	\end{tcolorbox}
+        \workitemsfour
+        {Minor in Robotics and Mechatronics}
+        {Final Project: \textit{Distributed Formation Control of a Swarm of Unicycles}}
+        {16 month internship between third and fourth years of studies}
+        {Latest term 92.1\% average (ranked 4 out of 173), 3.86/4.00 CGPA}
+    
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Scholarships and awards
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{SCHOLARSHIPS AND AWARDS}
+        \begin{itemize}[noitemsep, leftmargin=*]
+            \item \textbf{Applied Science and Engineering Dean's Honours List} \hfill 2014--Present
+            \item \textbf{Gordon R. Slemon Scholarship} \hfill 2016
+            \item \textbf{University of Toronto International Exchange Bursary} \hfill 2016
+            \item \textbf{University of Toronto Centre for International Exchange Award} \hfill 2016
+            \item \textbf{Royal Canadian Air Cadet Power Pilot Scholarship} \hfill 2014
+        \end{itemize}
+
+    \end{minipage}
+    \hspace{0.01\linewidth}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Right column
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \noindent\begin{minipage}[c]{0.33\linewidth}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Personal details
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{PERSONAL DETAILS}
+
+        \noindent\begin{tabularx}{\linewidth}{ll}
+           \textbf{Nationality} & French, Canadian
+        \end{tabularx}
+
+        \noindent\begin{tabularx}{\linewidth}{lX}
+           \emailsymbol    & \href{mailto:louis.pahlavi@mail.utoronto.ca}{louis.pahlavi@mail.utoronto.ca}\\
+           \phonesymbol    & +1 (647) 909-5487 \\
+           \mailsymbol     & 106 Wineva Ave, Toronto, ON, M4E 2T2, Canada \\
+           \homepagesymbol & \href{https:\\lpahlavi.github.io}{lpahlavi.github.io}
+        \end{tabularx}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Languages
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{LANGUAGES}
+
+        \cvskill{English}{5}
+        \cvskill{French}{5}
+        \cvskill{Italian}{4}
+        \cvskill{German}{3}
+        \cvskill{Czech}{1}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Programming languages
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{PROGRAMMING LANGUAGES}
+
+        \cvskill{C/C++}{5}
+        \cvskill{Python}{5}
+        \cvskill{MATLAB}{4}
+        \cvskill{Java}{2}
+    \end{minipage}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Research and industry experience
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{RESEARCH AND INDUSTRY EXPERIENCE}
+    
+    \position{Systems and Control Engineering Intern}{May 2017--August 2018}{\href{https://veritystudios.com/}{Verity Studios AG}}{Z{\"u}rich, Switzerland}
+
+    \workitemsthree
+    {Worked on improving the onboard control algorithms of swarms of quadcopters implemented in C++.}
+    {Evaluated and characterized flight performance and effectiveness of calibration routines using Python.}
+    {Serviced entertainment drone show systems overseas and oversaw flight operations for several weeks.}
+    
+    \position{Researcher}{May 2016--August 2016}{\href{http://www.lbb.ethz.ch/}{ETH Z{\"u}rich Laboratory for Biosensors and Bioelectronics}}{Z{\"u}rich, Switzerland}
+    
+    \workitemstwo
+    {Developed the control and image processing software for a biosensor measuring protein interactions.}
+    {Created a Graphical User Interface using Qt to control the actuators and interface them with various sensors.}
+    
+    \position{Researcher}{May 2015--September 2015}{\href{http://www.waves.utoronto.ca/prof/svhum/}{University of Toronto Reconfigurable Antenna Laboratory}}{Toronto, Canada}
+
+    \workitemstwo
+    {Designed and simulated the early prototypes of a deployable antenna mounted on the NORSAT-2 maritime communications satellite (launched in 2017) in collaboration with the European Space Agency.}
+    {Created a MATLAB simulation to model a satellite's orbit and predict antenna radiation intensity on the surface of the Earth. Worked on antenna synthesis to find an antenna array for a given desired coverage area.}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Projects and Teaching
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{PROJECTS AND TEACHING}
+    
+    \position{Capstone Team Lead}{September 2018--April 2019}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}{Toronto, Canada}
+
+    \workitemsthree
+    {Implementing a fully distributed algorithm for the formation control of a swarm of wheeled robots in C++.}
+    {Built and tested the communication interfaces between onboard modules and C++ and Python applications.}
+    {Developed a Python simulation framework to test and tune the control algorithms. }
+    
+    \position{Wireless Communications Lead}{September 2014--June 2016}{\href{https://www.utat.ca/space-systems/}{University of Toronto Aerospace Team (Space Systems)}}{Toronto, Canada}
+
+    \workitemstwo
+    {Designed, built and tested the antenna and communication module PCB, on a student-built nano-satellite.}
+    {Presented our design at several Product Design Reviews and the Critical Design Review in Vancouver.}
 
 \end{document}

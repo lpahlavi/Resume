@@ -13,7 +13,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ResumeTemplate}[2015/08/05 Louis Resume Class]
-\LoadClass[11pt]{article}
+\LoadClass[a4paper,academicons]{altacv}
 \RequirePackage{titlesec}
 \pagenumbering{gobble}
 
@@ -21,24 +21,24 @@
 \titlespacing\subsection{0pt}{20pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
 
 % Required packages
-\usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{enumitem}
 \usepackage{geometry}
 
 % Useful packages
 \usepackage{hyperref}
-
-% Font
-\usepackage{tgtermes}
+\usepackage{tabularx}
+\usepackage{graphicx}
 
 % Setup document margins
-\geometry{letterpaper,
-	total={210mm,297mm},
-	left=0.55in,
-	right=0.55in,
-	top=0.55in,
-	bottom=0.65in}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+
+% Bibliography required for altacv
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+% Set font
+\setmainfont{Carlito}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Custom commands
@@ -64,31 +64,41 @@
 
 % Dated subsection
 \newcommand{\datedsubsection}[2]{%
-	\subsection[#1]{#1 \hfill \textnormal{\normalsize{#2}}}%
+	\subsection[#1]{#1 \newline \textnormal{\normalsize{#2}}}%
 }
 
 % Position (i.e. job or other position)
-\newcommand{\position}[3]{%
-	\subsection[#1]{#1, \textnormal{#3}\hfill \textnormal{\normalsize{#2}}}%
+\newcommand{\position}[4]{%
+	\subsection[#1]{#1 \hfill \textnormal{\normalsize{#2}} \newline
+	\textnormal{\normalsize{#3}} \hfill \textnormal{\normalsize{#4}}}
 }
 
 % My name at the top of the document
-\newcommand{\name}[1]{
-	\centerline{\bf\huge{#1}}
+\newcommand{\myname}[1]{
+	\centerline{\bf\Huge{#1}}
 }
 
 % My contact info
-\newcommand{\contact}[6]{
+\newcommand{\contact}[5]{
 	\center{\large #1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-	{\large\textperiodcentered} #4 
-	\newline
-	#5 {\large\textperiodcentered} #6}
+	{\large\textperiodcentered} #4 {\large\textperiodcentered} #5}
 \vspace*{-\baselineskip}
+}
+
+% 5-item description
+\newcommand{\workitemsfive}[5]{
+	\begin{itemize}[noitemsep,nosep]
+		\item #1
+		\item #2
+		\item #3
+		\item #4
+		\item #5 \vspace*{-\baselineskip}
+	\end{itemize}
 }
 
 % 4-item description
 \newcommand{\workitemsfour}[4]{
-	\raggedright\begin{itemize}[noitemsep,nosep]
+	\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2
 		\item #3
@@ -98,7 +108,7 @@
 
 % 3-item description
 \newcommand{\workitemsthree}[3]{
-	\raggedright\begin{itemize}[noitemsep,nosep]
+	\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2
 		\item #3 \vspace*{-\baselineskip}
@@ -107,7 +117,7 @@
 
 % 2-item description
 \newcommand{\workitemstwo}[2]{
-	\raggedright\begin{itemize}[noitemsep,nosep]
+	\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2 \vspace*{-\baselineskip}
 	\end{itemize}
@@ -115,7 +125,7 @@
 
 % 1-item description
 \newcommand{\workitemsone}[1]{
-	\raggedright\begin{itemize}[noitemsep,nosep]
+	\begin{itemize}[noitemsep,nosep]
 		\item #1 \vspace*{-\baselineskip}
 	\end{itemize}
 }
