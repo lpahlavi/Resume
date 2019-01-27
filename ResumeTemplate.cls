@@ -32,11 +32,10 @@
 \usepackage{textpos}
 \usepackage{framed, color}
 \definecolor{shadecolor}{rgb}{0.82,0.82,0.82}
-\definecolor{sidecolor}{HTML}{E7E7E7}
 
 % Setup document margins
-\geometry{left=1cm,right=1cm,top=2cm,bottom=2cm}
-\renewcommand{\baselinestretch}{1.2} 
+\geometry{left=0.75cm,right=0.75cm,top=1.5cm,bottom=1.5cm}
+% \renewcommand{\baselinestretch}{1.2} 
 
 % Bibliography required for altacv
 \usepackage{biblatex}
@@ -51,7 +50,7 @@
 
 % Custom section title
 \titleformat{\section}
-	{\bf\center}
+	{\bf\large\center}
 	{}{0em} 
 	{}
 
@@ -107,6 +106,7 @@
 		\item #4
 		\item #5
 	\end{itemize}
+\vspace*{-\baselineskip}
 }
 
 % 4-item description
@@ -117,6 +117,7 @@
 		\item #3
 		\item #4
 	\end{itemize}
+\vspace*{-\baselineskip}
 }
 
 % 3-item description
@@ -126,6 +127,7 @@
 		\item #2
 		\item #3
 	\end{itemize}
+\vspace*{-\baselineskip}
 }
 
 % 2-item description
@@ -134,6 +136,7 @@
 		\item #1
 		\item #2
 	\end{itemize}
+\vspace*{-\baselineskip}
 }
 
 % 1-item description
@@ -141,6 +144,7 @@
 	\begin{itemize}[noitemsep,nosep]
 		\item #1
 	\end{itemize}
+\vspace*{-\baselineskip}
 }
 
 \newenvironment{ritemize}{\begin{itemize}[noitemsep, leftmargin=*]\raggedright}{\end{itemize}}
