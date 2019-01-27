@@ -29,10 +29,14 @@
 \usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{graphicx}
+\usepackage{textpos}
+\usepackage{framed, color}
+\definecolor{shadecolor}{rgb}{0.82,0.82,0.82}
+\definecolor{sidecolor}{HTML}{E7E7E7}
 
 % Setup document margins
-\geometry{left=2.25cm,right=2.25cm,top=2.25cm,bottom=2.25cm}
-\renewcommand{\baselinestretch}{1.15} 
+\geometry{left=1cm,right=1cm,top=2cm,bottom=2cm}
+\renewcommand{\baselinestretch}{1.2} 
 
 % Bibliography required for altacv
 \usepackage{biblatex}
@@ -47,10 +51,18 @@
 
 % Custom section title
 \titleformat{\section}
-	{\bf\large\center}
+	{\bf\center}
 	{}{0em} 
 	{}
-	[{\titlerule[1pt]}]
+
+\let\oldsection\section
+\renewcommand{\section}[1]{%
+	\begin{snugshade}
+	\vspace*{0.25\baselineskip}
+	\oldsection{{#1}}
+	\vspace*{-0.25\baselineskip}
+	\end{snugshade}
+}
 	
 % Custom subsection title
 \titleformat{\subsection}
@@ -93,7 +105,7 @@
 		\item #2
 		\item #3
 		\item #4
-		\item #5 \vspace*{-\baselineskip}
+		\item #5
 	\end{itemize}
 }
 
@@ -103,7 +115,7 @@
 		\item #1
 		\item #2
 		\item #3
-		\item #4 \vspace*{-\baselineskip}
+		\item #4
 	\end{itemize}
 }
 
@@ -112,7 +124,7 @@
 	\begin{itemize}[noitemsep,nosep]
 		\item #1
 		\item #2
-		\item #3 \vspace*{-\baselineskip}
+		\item #3
 	\end{itemize}
 }
 
@@ -120,14 +132,14 @@
 \newcommand{\workitemstwo}[2]{
 	\begin{itemize}[noitemsep,nosep]
 		\item #1
-		\item #2 \vspace*{-\baselineskip}
+		\item #2
 	\end{itemize}
 }
 
 % 1-item description
 \newcommand{\workitemsone}[1]{
 	\begin{itemize}[noitemsep,nosep]
-		\item #1 \vspace*{-\baselineskip}
+		\item #1
 	\end{itemize}
 }
 
