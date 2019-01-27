@@ -31,7 +31,8 @@
 \usepackage{graphicx}
 
 % Setup document margins
-\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\geometry{left=2.25cm,right=2.25cm,top=2.25cm,bottom=2.25cm}
+\renewcommand{\baselinestretch}{1.15} 
 
 % Bibliography required for altacv
 \usepackage{biblatex}
@@ -64,13 +65,13 @@
 
 % Dated subsection
 \newcommand{\datedsubsection}[2]{%
-	\subsection[#1]{#1 \newline \textnormal{\normalsize{#2}}}%
+	\subsection[#1]{#1 \newline \textnormal{{#2}}}%
 }
 
 % Position (i.e. job or other position)
 \newcommand{\position}[4]{%
-	\subsection[#1]{#1 \hfill \textnormal{\normalsize{#2}} \newline
-	\textnormal{\normalsize{#3}} \hfill \textnormal{\normalsize{#4}}}
+	\subsection[#1]{#1 \hfill \textnormal{{#2}} \newline
+	\textnormal{{#3}} \hfill \textnormal{{#4}}}
 }
 
 % My name at the top of the document
