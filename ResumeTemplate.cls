@@ -31,10 +31,11 @@
 \usepackage{graphicx}
 \usepackage{textpos}
 \usepackage{framed, color}
+\usepackage{tcolorbox}
 \definecolor{shadecolor}{rgb}{0.82,0.82,0.82}
 
 % Setup document margins
-\geometry{left=0.75cm,right=0.75cm,top=1.5cm,bottom=1.5cm}
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm}
 % \renewcommand{\baselinestretch}{1.2} 
 
 % Bibliography required for altacv
@@ -61,6 +62,21 @@
 	\oldsection{{#1}}
 	\vspace*{-0.25\baselineskip}
 	\end{snugshade}
+
+	% \vspace*{0.5\baselineskip}
+	% \begin{tcolorbox}[%
+	% 	enhanced,
+ %        frame hidden,
+	% 	skin=enhancedfirst, 
+	% 	interior style={left color=black!35,right color=black!5},
+	%     left=0pt,right=0pt,top=0pt,bottom=0pt,
+	%     sharpish corners,
+	% 	]
+	% 	\vspace*{0.25\baselineskip}
+	% 	\oldsection{{#1}}
+	% 	\vspace*{-0.25\baselineskip}
+	% \end{tcolorbox}
+	% \vspace*{0.5\baselineskip}
 }
 	
 % Custom subsection title

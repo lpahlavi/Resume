@@ -12,21 +12,38 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{ResumeTemplate}
 
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\usepackage{lipsum}
+
+\definecolor{color1}{RGB}{0,0,90}  % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-    \fontsize{10}{12}\selectfont
+    \fontsize{11}{12}\selectfont
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Sidebar
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \begin{minipage}[c]{0.30\linewidth}
+    %\noindent\fcolorbox{brown}{brown}{%
+    \begin{minipage}[c][0.99\textheight]{0.34\linewidth}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Name
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % \centering\myname{Louis Pahlavi}
+        % \vspace{0.5cm}
 
         % Picture
-        % \centering\includegraphics[width=0.6\linewidth]{me}
-        \centering\tikz\path[fill overzoom image={me}]circle[radius=0.35\linewidth];
+        % \centering\includegraphics[width=0.7\linewidth]{me_1}
+        \centering\tikz\path[fill overzoom image={me_1}]circle[radius=0.35\linewidth];
+    
+        \vspace{0.5cm}
 
         % Personal details
         \section{PERSONAL DETAILS}
@@ -37,116 +54,186 @@
 
         \noindent\begin{tabularx}{\linewidth}{lX}
            \emailsymbol    & \href{mailto:louis.pahlavi@mail.utoronto.ca}{louis.pahlavi@mail.utoronto.ca}\\
-           \phonesymbol    & +1 (647) 909-5487 \\
-           \mailsymbol     & 106 Wineva Ave, Toronto, ON, M4E 2T2, Canada \\
-           \homepagesymbol & \href{https:\\lpahlavi.github.io}{lpahlavi.github.io}
+           \phonesymbol    & +41 587 54 87 \\
+           \mailsymbol     & Kügeliloostrasse 44, 8050 Zürich, Switzerland \\
+           \\
+           \linkedinsymbol & \href{https://www.linkedin.com/in/louispahlavi/}{linkedin.com/in/louispahlavi} \\
+           \homepagesymbol & \href{https:\\lpahlavi.github.io}{lpahlavi.github.io} \\
+           \githubsymbol   & \href{https://github.com/}{github.com/lpahlavi}
         \end{tabularx}
 
         % Languages
         \section{LANGUAGES}
 
+        \begin{minipage}[c]{0.8\linewidth}
         \cvskill{English}{5}
         \cvskill{French}{5}
         \cvskill{Italian}{4}
         \cvskill{German}{3}
-        \cvskill{Czech}{1}
+        \cvskill{Polish}{2}
+        % \cvskill{Czech}{1}
+        \end{minipage}
+        % \cvskill{Czech}{1}
 
         % Technical skills
         \section{TECHNICAL SKILLS}
 
+        \cvtag{Python}
+        \cvtag{C/C++}
+        \cvtag{MATLAB}
+        \cvtag{Java}
+        % \cvtag{R}
+        % \cvtag{SQL}
+
+        ~
+
         \noindent\begin{tabularx}{\linewidth}{>{\bfseries}lX}
            Build tools     & Makefile, CMake \\
            Organization    & Git, Gerrit, Jira \\
-           Platforms       & Linux, Arduino, Raspberry Pi \\
-           Libraries       & Boost, QT, CVX, Tensorflow
+           Platforms       & Linux, macOS \\
+           Libraries       & Numpy, Pandas, Scipy, Matplotlib, QT, Bokeh, Boost, CVX, Tensorflow
         \end{tabularx}
-        Control theory and robotics, Networking, Optimization, Algorithms and data structures, Machine learning
 
-        % Programming languages
-        \section{PROGRAMMING LANGUAGES}
+        ~
 
-        \cvskill{C/C++}{5}
-        \cvskill{Python}{5}
-        \cvskill{MATLAB}{4}
-        \cvskill{Java}{2}
+        Control theory and robotics, Mathematical optimization, Data science, Algorithms and data structures, Machine learning
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % About me
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{ABOUT ME}
 
-        % Scholarships and awards
-        \section{SCHOLARSHIPS AND AWARDS}
-        \begin{itemize}[noitemsep, leftmargin=*]
-            \item \textbf{Applied Science and Engineering Dean's Honours List} \hfill 2014--2019
-            \item \textbf{Gordon R. Slemon Scholarship} \hfill 2016
-            \item \textbf{University of Toronto International Exchange Bursary} \hfill 2016
-            \item \textbf{University of Toronto Centre for International Exchange Award} \hfill 2016
-            \item \textbf{Royal Canadian Air Cadets Power Pilot Scholarship} \hfill 2014
-            % \item \textbf{Royal Canadian Air Cadet Glider Pilot Scholarship} \hfill 2013
-        \end{itemize}
+        \raggedright
+        I am strongly detail oriented and work best in small but passionate teams.
+        \newline\newline
+        Always passionate about aviation I obtained my private pilot's license at age 16. I also love travelling, skiing and learning new languages. 
+        \newline\newline
+        I am most interested in programming for applications that involve a lot of mathematical theory (robotics, finance, optimization, etc.).
 
-    \end{minipage}
+    \end{minipage}%}
     \hspace{0.025\linewidth}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % Main document
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \raggedright\begin{minipage}[c]{0.66\linewidth}
+    \raggedright\begin{minipage}[c]{0.61\linewidth}
 
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Name
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % % Name
+        % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \centering\myname{Louis L. W. D. Pahlavi}
-        \vspace{0.5cm}
+        \vspace{0.75cm}
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Education
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         \section{EDUCATION}
 
-        % \datedsubsection{ETH Z{\"u}rich, MSc in Computational Science}{September 2019--February 2021}
+        % % ETHZ
+        % \position{M.Sc. in Robotics, Systems and Controls}{2019--2021}{ETH Z{\"u}rich}{Z{\"u}rich, Switzerland}
 
-        % \workitemsone
-        % {Specialization in Financial Engineering}
+        % \workitemstwo
+        % {Focus: Machine Learning, Optimization, Computational Finance}
+        % {Excellence Scholarship and Opportunity Program, Top applicant in the world}
 
-        \datedsubsection{University of Toronto, BASc in Computer Engineering}{September 2014--April 2019}
+        % UofT
+        \position{B.A.Sc. in Computer Engineering}{2014--2019}{University of Toronto}{Toronto, Canada}
 
         \workitemsfour
+        {High honours (approx. top 5 percent), 3.84/4.00 CGPA}
         {Minor in Robotics and Mechatronics}
-        {Final Project: \textit{Distributed Formation Control of a Swarm of Unicycles}}
-        {16 month internship between third and fourth years of studies}
-        {Latest term 92.1\% average (ranked 4 out of 173), 3.86/4.00 CGPA}
-        \vspace*{\baselineskip}
+        {Summer research student exchange with ETH Z\"urich}
+        {Final Project: \textit{Distributed Rendezvous of a Swarm of Wheeled Robots}}
+        % {16 month internship in industry between third and fourth years of studies}
+        % {Latest term 92.1\% average (ranked 4 out of 173), 3.86/4.00 CGPA}
+        % {Focus of studies: Control theory and robitics, machine learning and optimization}
+
+        % LFT
+        \position{French Baccalauréat Général (S)}{2011-2014}{Lycée Français de Toronto}{Toronto, Canada}
+
+        % \workitemsthree
+        % {Scientific Stream, Specialization: Mathematics}
+        % {American International Option (OIB)}
+        % {Final Average 17.9/20, Highest Honours}
+
+        % \vspace*{\baselineskip}
 
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        % Research and industry experience
+        % Industry experience
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \section{RESEARCH AND INDUSTRY EXPERIENCE}
+        \section{INDUSTRY EXPERIENCE}
+        
+        % \vspace*{-1.5\baselineskip}
+
+        % Archlet
+        \position{Data Scientist}{May 2019--Present}{\href{https://archlet.ch}{Archlet AG}}{Z{\"u}rich, Switzerland}
+
+        \workitemsthree
+        {In charge of the development of a tool making use of data science and mathematical optimization to maximize savings in the procurement industry.}
+        {Develpping the optimization engine in Python as part of a cloud application.}
+        {Interacting with clients as part of sales and to develop the user interface.}
+        % {Applying techniques from mathematical optimization algorithm design.}
         
         % Verity Studios
         \position{Systems and Control Engineering Intern}{May 2017--August 2018}{\href{https://veritystudios.com/}{Verity Studios AG}}{Z{\"u}rich, Switzerland}
 
-        \workitemsfour
-        {Worked on improving the onboard estimation and control algorithms of swarms of quadcopters implemented in C++.}
-        {Evaluated and characterized flight performance and effectiveness of calibration routines using Python and successfully improved drone production pipeline.}
+        \workitemsthree
+        {Worked on the onboard estimation and control algorithms of swarms of quadcopters and offboard user interface applications implemented in C++.}
+        {Evaluated and characterized flight performance and effectiveness of calibration routines using Python and improved drone production pipeline.}
         {Serviced entertainment drone show systems overseas and personally oversaw flight operations for several weeks.}
-        {Maintained and improved offboard control and housekeeping applications including Graphical User Interfaces (GUIs).}
+        % {Maintained and improved offboard control and housekeeping applications including Graphical User Interfaces (GUIs).}
+
+        % UTIAS-SFL
+        \position{Radio Frequencies Engineer}{June 2015--September 2015}{\href{https://www.utias-sfl.net/}{UTIAS Space Flight Laboratories}}{Toronto, Canada}
+
+        \workitemsone
+        {Designed and simulated the early prototypes of a deployable antenna mounted on the NORSAT-2 maritime communications satellite (launched in 2017) in collaboration with the European Space Agency.}
+
+        \vspace*{\baselineskip}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Research experience
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \section{RESEARCH EXPERIENCE}
+        
+        % % APS100
+        % \position{Teaching Assistant}{September 2016--December 2016}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}{Toronto, Canada}
+
+        % \workitemsone
+        % {Taught APS100 -- 'Orientation to Engineering' to first year Electrical and Computer Engineering students.}
         
         % LBB
-        \position{Researcher}{May 2016--August 2016}{\href{http://www.lbb.ethz.ch/}{ETH Z{\"u}rich Laboratory for Biosensors and Bioelectronics}}{Z{\"u}rich, Switzerland}
+        \position{Researcher}{May 2016--August 2016}{\href{http://www.lbb.ethz.ch/}{ETHZ Lab for Biosensors and Bioelectronics}}{Z{\"u}rich, Switzerland}
         
         \workitemsthree
         {Developed the control and image processing software for a biosensor measuring protein interactions in fluids.}
         {Created a GUI using QT to control the actuators and interface them with various sensors including a live camera feed and calibration procedures.}
         {Experimented on the growth of networks of living animal neurons.}
-
-        % UTIAS-SFL
-        \position{Radio Frequencies Engineer}{June 2015--September 2015}{\href{https://www.utias-sfl.net/}{Space Flight Laboratories}}{Toronto, Canada}
-
-        \workitemstwo
-        {Designed and simulated the early prototypes of a deployable antenna mounted on the NORSAT-2 communications satellite (launched in 2017) in collaboration with the European Space Agency.}
+        
+        % Sean V. Hum
+        \position{Researcher}{May 2015--June 2015}{\href{http://www.waves.utoronto.ca/about.htm}{University of Toronto Electromagnetics Group}}{Toronto, Canada}
+        
+        \workitemsone
         {Created a MATLAB simulation to model a satellite's orbit and predict antenna radiation intensity on the surface of the Earth. Worked on antenna synthesis to find an antenna array for a given desired coverage area.}
-        \vspace*{\baselineskip}
+
+        % % 330 Danforth Tech
+        % \position{Ground School Instructor}{September 2014--January 2015}{330 Danforth Tech Royal Canadian Air Cadet Squadron}{Toronto, Canada}
+        
+        % \workitemsone
+        % {Coordinated and taught the pilot ground school course at 330 Danforth Tech Royal Canadian Air Cadet Squadron leading several of my students to earn their pilot wings.}
+
+        % % Cadets
+        % \position{Warrant Officer Second Class}{September 2009--August 2014}{166 Bulldog Royal Canadian Air Cadet Squadron}{Toronto, Canada}
+        
+        % \workitemstwo
+        % {Gained extensive leadership experience while teaching classes and being in charge of the organization of large group activites and eventually achieving the second highest rank in the cadet program.}
+        % {Participated in highly selective nation-wide courses including obtaining my pilot wings for both gliders and powered airplanes}
+
+    \end{minipage}
         
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
         % Projects and Teaching
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \section{PROJECTS} % AND TEACHING}
+        \section{PROJECTS AND TEACHING}
         
         % Capstone
         \position{Capstone Team Lead}{September 2018--April 2019}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}{Toronto, Canada}
@@ -156,24 +243,45 @@
         {Built and tested the communication interfaces between onboard modules and C++ and Python applications.}
         {Developed a Python simulation framework to test and tune the control algorithms. }
         
-        % % % APS100
-        % % \position{Teaching Assistant}{September 2016--December 2016}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}{Toronto, Canada}
+        % APS100
+        \position{Teaching Assistant}{September 2016--December 2016}{\href{https://www.engineering.utoronto.ca/}{University of Toronto Faculty of Engineering}}{Toronto, Canada}
 
-        % % \workitemsone
-        % % {Taught APS100 -- 'Orientation to Engineering' to first year Electrical and Computer Engineering students.}
+        \workitemsone
+        {Taught APS100 -- 'Orientation to Engineering' to first year Electrical and Computer Engineering students.}
         
         % UTAT SS
         \position{Wireless Communications Lead}{September 2014--June 2016}{\href{https://www.utat.ca/space-systems/}{University of Toronto Aerospace Team (Space Systems)}}{Toronto, Canada}
 
-        \workitemsone
+        \workitemstwo
         {Designed, built and tested the antenna and communication module PCB, on a student-built nano-satellite.}
-        % {Presented our design at several Product Design Reviews and the Critical Design Review in Vancouver.}
+        {Presented our design at several Product Design Reviews and the Critical Design Review in Vancouver.}
 
-        % % 330 Danforth Tech
-        % \position{Ground School Instructor}{September 2014--January 2015}{330 Danforth Tech Royal Canadian Air Cadet Squadron}{Toronto, Canada}
+        % 330 Danforth Tech
+        \position{Ground School Instructor}{September 2014--January 2015}{330 Danforth Tech Royal Canadian Air Cadet Squadron}{Toronto, Canada}
         
-        % \workitemsone
-        % {Coordinated and taught the pilot ground school course at 330 Danforth Tech Royal Canadian Air Cadet Squadron leading several of my students to earn their pilot wings.}
-    \end{minipage}
+        \workitemsone
+        {Coordinated and taught the pilot ground school course at 330 Danforth Tech Royal Canadian Air Cadet Squadron leading several of my students to earn their pilot wings.}
+
+        % Cadets
+        \position{Warrant Officer Second Class}{September 2009--August 2014}{166 Bulldog Royal Canadian Air Cadet Squadron}{Toronto, Canada}
+        
+        \workitemstwo
+        {Gained extensive leadership experience while teaching classes and being in charge of the organization of large group activites and eventually achieving the second highest rank in the cadet program.}
+        {Participated in highly selective nation-wide courses including obtaining my pilot wings for both gliders and powered airplanes}
+
+        \vspace*{\baselineskip}
+
+
+        % Scholarships and awards
+        \section{SCHOLARSHIPS AND AWARDS}
+        \begin{itemize}[noitemsep, leftmargin=*]
+            \item \textbf{Excellence Scholarship and Opportunity Program} \hfill 2019--2021
+            \item \textbf{Applied Science and Engineering Dean's Honours List} \hfill 2014--2019
+            \item \textbf{Gordon R. Slemon Scholarship} \hfill 2016
+            \item \textbf{University of Toronto International Exchange Bursary} \hfill 2016
+            \item \textbf{University of Toronto Centre for International Exchange Award} \hfill 2016
+            \item \textbf{Royal Canadian Air Cadets Power Pilot Scholarship} \hfill 2014
+            \item \textbf{Royal Canadian Air Cadet Glider Pilot Scholarship} \hfill 2013
+        \end{itemize}
 
 \end{document}
